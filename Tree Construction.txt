@@ -6,6 +6,7 @@ sum += arr[i] ;
 }
 return sum;
 }
+
 void create_fenwick_tree(int T[], int arr[], int n)
 {
 int a, b, k;
