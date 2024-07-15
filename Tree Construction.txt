@@ -1,0 +1,18 @@
+int sum(int arr[], int n, int a, int b){
+int i, sum=0;
+for (i = a; i<=b; i++)
+{
+sum += arr[i] ;
+}
+return sum;
+}
+void create_fenwick_tree(int T[], int arr[], int n)
+{
+int a, b, k;
+for (k=1; k<=n; k++)
+{
+a = k – (k&-k) +1;
+b = k;
+T[k] = sum(arr,n,a,b);
+}
+}

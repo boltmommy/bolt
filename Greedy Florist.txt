@@ -1,0 +1,9 @@
+int a[200],i,j,k,l,sum,n;
+
+qsort(a,n,sizeof(a[0]),com); // sorts in descending order of price
+sum=0; 
+for(i=0;i<n;i++)
+sum+= a[i]*(1+i/k);
+printf("%d\n",sum); 
+return 0;
+}
